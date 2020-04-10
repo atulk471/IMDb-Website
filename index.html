@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV Shows</title>
+  <link rel = "icon" href =  "im.png" type = "image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ <style type="text/css">
+ 	body
+ 	{
+ 		background-color: #000000;
+ 	}
+ 	header
+ 	{
+         background-color: #121111;
+         width: 100%;
+         height: 60px;
+ 	}
+ 	.logo
+ 	{
+ 		margin-left: 150px;
+ 	}
+ 	.logo:hover
+ 	{
+ 		opacity: 0.9;
+ 	}
+ #topnav {
+ 	display: none;
+  margin-top: -80px;
+  background-color: #232020;
+  position: fixed;
+  width: 100%;
+  height: 780px;
+  animation-name: slidedown;
+  animation-duration: 0.5s;
+  z-index: 1;
+}
+
+ #topnav1{
+  display: none;
+  background-color: #232020;
+  margin-left: 325px;
+  margin-top: -28px;
+  position: relative;
+  width: 230px;
+  height: 300px;
+  border-radius: 4px;
+}
+@keyframes slidedown
+{
+	0%{
+             margin-top: -800px;
+ 	  }
+ 	  100%
+ 	  {
+ 	  	margin-top: -80px;
+ 	  }
+}
+#logo1
+{
+	color: black;
+	border-radius: 5px;
+	background-color: #DFBA14;
+	padding: 5px 7px;
+	font-family: fantasy;
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 32px;
+	width:80px;
+	margin-left: 300px;
+}
+.list
+{
+	margin-top: 120px;
+	margin-left:280px;
+}
+.col1
+{
+     float: left;
+
+}
+.col2
+{
+   float: left;
+   margin-left:30px;
+   }
+.col3
+{
+	float: left;
+	margin-left:60px;
+}	
+.col4
+{
+	float: left;
+	margin-left:40px;
+}
+.col1 p,.col2 p,.col3 p,.col4 p
+{
+	font-family: sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	margin-left: 40px;
+}
+.ulist
+{
+	list-style: none;
+	opacity: 0.8;
+}
+.ulist li
+{
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+	padding-bottom: 20px;
+
+}
+.ulist li a
+{
+	text-decoration: none;
+	color: white;
+}
+.ulist li a:hover
+{
+	text-decoration: underline;
+	
+}
+#myLinks
+{
+	position: absolute;
+	padding-top: 45px;
+}
+#close:hover
+{
+	background-color: #C6AA2A;
+}
+#close
+{
+	color: black;
+	border-radius: 40px;
+	background-color: #DFBA14;
+	padding: 5px 18px 7px 18px;
+	font-family: sans-serif;
+	text-decoration: none;
+	font-weight: lighter;
+	font-size: 32px;
+	margin-left: 800px;
+}
+#bars
+{
+	color: #989898;
+}
+.icon
+{   
+	padding: 6.7px 12px;
+   text-decoration: none;
+	width:60px;
+	border-radius: 4px;
+	background: #121111;
+  display: block;
+  color: #F0F0EC;
+ font-family: sans-serif;
+ font-weight: bold;
+ float: left;
+ margin-top: -50px;
+ margin-left: 230px;
+ position: relative;
+}
+.icon2,.icon3
+{   
+	padding: 6.7px 12px;
+   text-decoration: none;
+	width:54px;
+	border-radius: 4px;
+	background: #121111;
+  display: block;
+  color: #F0F0EC;
+ font-family: fantasy;
+ float: left;
+ margin-top: -50px;
+ margin-left: 1130px;
+ position: relative;
+}
+.icon2:hover
+{
+	background: #453D3D;
+
+}
+.icon3:hover
+{
+	background: #453D3D;
+}
+.icon1
+{   
+	padding: 5px 10px;
+   text-decoration: none;
+	width:35px;
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+	border-right:  solid 1px black;
+	background: #EDECE7;
+  display: block;
+  color: black;
+   font-family: sans-serif;
+   font-weight: bold;
+   float: left;
+   margin-top: -48px;
+   margin-left:  325px;
+   position: sticky;
+   z-index: 0;
+}
+.icon1:hover
+{
+	background: #D0D0CE;
+
+}
+.icon:hover
+{
+	background: #453D3D;
+
+}
+.icon:hover #bars
+{
+	color: white;
+}
+#myLinks p
+{
+	color: white;
+}  
+.ulist1
+{    
+	padding-top: 10px;
+	margin-left: -40px;
+	list-style: none;
+	opacity: 0.8;
+}
+.ulist1 li
+{
+	padding: 10px 20px;
+    font-family: sans-serif;
+	font-size: 17px;
+	font-weight: lighter;
+}
+.ulist1 li a
+{    
+	text-decoration: none;
+	color: white;
+}
+.ulist1 li:hover
+{
+	background-color: #5C5C51;
+}
+#active 
+{
+	color: #DFBA14;
+}
+.search-container {
+  float: right;
+  margin-top: -48px;
+  margin-right: 381.9px;
+  position: relative;
+}
+
+input[type=text] {
+  padding: 4.2px;
+  font-size: 17px;
+  border: none;
+  width: 683px;
+}
+.search-container button {
+  float: right;
+  padding: 6.2px 10px 5.8px 10px;
+  margin-right: 16px;
+  background: white;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.line
+{
+	font-family: sans-serif;
+	font-size: 25px;
+	color: black;
+	width: 2px;
+	margin-left: 1220px;
+	margin-top: -47px;
+	border: solid 0.1px white;
+	position: absolute;
+}
+
+.slideshow-container {
+	margin-top: 80px;
+  max-width: 1000px;
+  position: absolute;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  font-size: 30px;
+  border: solid 1px white;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  font-size: 50px;
+  padding:1px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-left: 170px;
+  font-weight: bolder;
+  font-family: sans-serif;
+  color: white;
+}
+.text1 {
+  padding:1px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-left:343px;
+  margin-top: -99px;
+  font-weight: bolder;
+  font-family: sans-serif;
+  color: white;
+  font-size: 24px; 
+  font-weight: lighter;  
+  opacity: 0.8;
+}
+.text i
+{
+   cursor: pointer;
+}
+.text i:hover
+{
+	opacity: 0.7;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  margin-left: 150px;
+}
+.numbertext:hover
+{
+    color: #DFBA14;
+}
+/* Position the "next button" to the right */
+.next {
+  border-radius: 3px 0 0 3px;
+  margin-left: 1296px;
+}
+.prev
+{
+	margin-left: 180px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  
+  color: #DFBA14;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.box
+{
+	background-color: white;
+	width: 350px;
+	height: 500px;
+	margin-left: 170px;
+	cursor: pointer;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.box1
+{   
+	background-color: white;
+	width: 810px;
+	height: 500px;
+	margin-top: -500px;
+	margin-left: 550px;
+	cursor: pointer;
+}
+.box1:hover
+{
+	opacity: 0.7;
+}
+.box:hover
+{
+	opacity: 0.7;
+}
+#mark
+{
+	color: #EDECE7;
+	font-size: 45px;
+	margin-left: 171px; 
+	float: left;
+	position: absolute;
+	margin-top: -500px;
+	cursor: pointer;
+	opacity: 0.6;
+}
+#mark:hover
+{
+	color: yellow;
+}
+.mySlides
+{
+	display: none;
+}
+.browse
+{
+	float: left;
+	position: absolute;
+	color: #152CF6;
+	font-size: 16px;
+	font-family: sans-serif;
+       text-decoration: none;
+       top: 680px;
+       left: 176px;
+}
+.feature
+{
+	float: left;
+	position: absolute;
+	color: #C4F10C;
+	font-size: 37px;
+	font-family: sans-serif;
+       top: 730px;
+       left: 176px;
+}
+.featurelinks
+{
+	float: left;
+	position: absolute;
+	text-align: center;
+       top: 1580px;
+       left: 336px;
+       line-height: 40px;
+	width: 850px;
+}
+.featurelinks1
+{
+	float: left;
+	position: absolute;
+	text-align: center;
+       top: 1680px;
+       left: 696px;
+       color: white;
+	font-size: 17px;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+.featurelinks a
+{
+	color: white;
+	font-size: 17px;
+	font-family: sans-serif;
+	text-decoration: none;
+	margin-right: 28px;
+	padding-bottom: 80px;
+}
+.sm
+{
+	float: left;
+	position: absolute;
+	text-align: center;
+       top: 1495px;
+       left: 336px;
+       line-height: 40px;
+	width: 850px;
+}
+.sm a 
+{
+	color: white;
+	font-size: 22px;
+	font-family: sans-serif;
+	text-decoration: none;
+	background-color: black;
+	margin-right: 28px;
+	padding: 12px 14px;
+	border-radius: 28px;
+}
+.sm a:hover 
+{
+	background-color: #212020;
+}
+.featurelinks a:hover
+{
+	text-decoration: underline;
+}
+.browse:hover
+{
+	text-decoration: underline;
+}
+.cards
+{
+   top: 860px;
+   position: absolute;
+   float: left;
+   left: 176px;
+   padding-bottom: 100px;
+}
+.shape
+{
+	background-color: white;
+	height: 400px;
+	width: 280px;
+	float: left;
+	margin-right: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.shape:hover
+{
+	opacity: 0.6;
+	}
+.link8:hover
+	{
+		text-decoration: underline;
+	}
+.link8
+{
+	color: #3A8DFF; opacity: 1; text-decoration: none;
+}	
+ </style>
+ </head>
+ <body>
+ 	<header>
+ 		 <div class="logo">
+ 			<a href="#home"><img src="imd.png" height="60px" width="70px"> </a>
+ 		 </div>
+ 		 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars" id="bars" ></i> Menu
+           </a>
+ 		  <div id="topnav">
+               <div id="myLinks">
+                  
+ 			           <a href="" id="logo1">IMDb</a>
+ 		           
+                       <a href="" id="close" onclick="myFunction()">x</a>
+                   <div class="list">
+                       	   <div class="col1">
+			<p>ABOUT</p>
+			<ul class="ulist">
+				<li><a href="#">Diversity & Belonging</a></li>
+				<li><a href="#">Accessibility</a></li>
+				<li><a href="#">Trust & Safety</a></li>
+				<li><a href="#">Airbnb Citizen</a></li>
+				<li><a href="#">Newsroom</a></li>
+			</ul>
+		</div>
+		<div class="col2">
+			<p>COMMUNITY</p>
+			<ul class="ulist">
+				<li><a href="#">Airbnb Magazine</a></li>
+				<li><a href="#">Airbnb for Work</a></li>
+				<li><a href="#">Invite friends</a></li>
+				<li><a href="#">Careers</a></li>
+			 </ul>
+		</div>
+		<div class="col3">
+			<p>HOST</p>
+			<ul class="ulist">
+				<li><a href="#">Host your home</a></li>
+				<li><a href="#">Host an experience</a></li>
+				<li><a href="#">Responsible hosting</a></li>
+				<li><a href="#">Open Homes</a></li>
+				<li><a href="#">Olympics</a></li>
+				<li><a href="#">Resource Centre</a></li>
+			</ul>
+		</div>
+		<div class="col4" >
+			<p>SUPPORT</p>
+			<ul class="ulist">
+				<li><a href="#">Help Centre</a></li>
+				<li><a href="#">Neighbourhood Support</a></li>
+			</ul>
+		</div>
+                       </div>
+               </div>
+          </div>
+       </header>
+
+         <a href="javascript:void(0);" class="icon2">IMDbPro
+           </a>
+           <p class="line">I</p>
+           <a href="javascript:void(0);" class="icon3" style="margin-left: 1230px; width:90px; font-family: sans-serif; font-weight: bold; "><i class="fa fa-bookmark" style="color: #AAAAA3;  " aria-hidden="true"></i> Watchlist
+           </a>
+           <a href="javascript:void(0);" class="icon2" style="margin-left: 1348px; font-family: sans-serif; width: 60px; font-weight: bold;">Sign In
+           </a>
+                     <div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <div  class="box">
+  	<img src="after.jpg" height="500px" width="350px" >
+  </div>
+   <div  class="box1">
+  	<img src="aft1.jpg" height="500px" width="810px" >
+  </div>
+  <i class="fa fa-bookmark" id="mark" aria-hidden="true"></i>
+  <div class="text"><i class="fa fa-play-circle-o" aria-hidden="true" style="font-size: 100px; " > </i> After</div>
+   <div class="text1" >What happens when people die ?</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <div  class="box">
+  	<img src="joke.jpg" height="500px" width="350px" >
+  </div>
+   <div  class="box1">
+  	<img src="jok.jpg" height="500px" width="810px" >
+  </div>
+  <i class="fa fa-bookmark" id="mark" aria-hidden="true"></i>
+  <div class="text"><i class="fa fa-play-circle-o" aria-hidden="true" style="font-size: 100px; " > </i> Joker</div>
+   <div class="text1" style="margin-left: 290px;" >Forever alone in a crowd </div>
+</div>
+
+<div class="mySlides fade">
+  
+  <div  class="box">
+  	<img src="end.jpg" height="500px" width="350px" >
+  </div>
+   <div  class="box1">
+  	<img src="end1.jpg" height="500px" width="810px" >
+  </div>
+  <i class="fa fa-bookmark" id="mark" aria-hidden="true"></i>
+  <div style="margin-left: 220px;" class="text"><i class="fa fa-play-circle-o" aria-hidden="true" style="font-size: 100px; " > </i> Endgame</div>
+   <div style="margin-left: 303px;" class="text1" >Final stand against Thanos</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<div>
+	<a class="browse" href="#">Browse Trailers</a>
+	<p class="feature" >Featured Today</p>
+	<div class="cards">
+	
+		<div class="shape" >
+			<img style="border-radius: 3px;" src="col.png" height="400px" width="280px" >
+			<p style="color: white; font-family: sans-serif; font-size: 18px;">Collateral</p>
+		</div>
+		<div class="shape" >
+			<img style="border-radius: 3px;" src="spy.jpg" height="400px" width="280px" >
+			<p style="color: white; font-family: sans-serif; font-size: 18px;">Spy</p>
+		</div>
+		<div class="shape" >
+			<img style="border-radius: 3px;" src="see.jpeg" height="400px" width="280px" >
+			<p style="color: white; font-family: sans-serif; font-size: 18px;">See</p>
+		</div>
+		<div class="shape" >
+			<img style="border-radius: 3px;" src="host.jpg" height="400px" width="280px" >
+			<p style="color: white; font-family: sans-serif; font-size: 18px;">Hostages</p>
+		</div>
+	
+</div>
+<div>
+	<p class="feature" style="font-size: 20px; top: 1350px;" >On Intermission</p>
+	<p class="feature" style="font-size: 17px; top: 1390px; color: white; opacity: 0.8; padding-bottom: 40px; width: 1200px;" >While theaters are closed, some features like Top Box Office, In Theaters, and Showtimes are on intermission. We look forward to bringing them back as soon as possible. In the meantime, check out our <a href="" class="link8" >What's on TV and Streaming section.</a> </p>
+</div>
+<div class="sm">
+	<a href=""  ><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+	<a href=""  ><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	<a href=""  ><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	<a href=""  ><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+	<a href="" ><i class="fa fa-twitch" aria-hidden="true"></i></a>	
+</div>
+<div class="featurelinks">
+	<a href=""  >Get The IMDb App</a>
+	<a href=""  >Help</a>
+	<a href=""  >Site Index</a>
+	<a href=""  >IMDb Pro</a>
+	<a href="" >Box Office Mojo</a>
+	<a href=""  >Press Room</a>
+	<a href=""  >Advertising</a>
+	<a href="" >Jobs</a>
+	<a href=""  >Condition of Use</a>
+	<a href="" >Privacy Policy</a>
+	<a href=""  >Interest Based-Ads</a>
+</div>
+    <a  class="featurelinks1" href="" >An <i class="fa fa-amazon" aria-hidden="true"></i> Company</a>
+    <p  class="featurelinks1" style="font-size: 15px; opacity: 0.6; top: 1720px; padding-bottom: 40px; left: 674px; " >@ 1990-2020 by me.com</p>
+
+       <a href="javascript:void(0);" class="icon1" onclick="myFunction1()">All <i class="fa fa-caret-down" id="sym" aria-hidden="true"></i>
+           </a>
+           <div class="search-container">
+                                     <form>
+                                        <input type="text" placeholder="Search IMDb">
+                                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                      </form>
+                   </div>
+ 		  <div id="topnav1">
+ 		  	    <ul class="ulist1">
+ 		  	    <li><a href="#" id="active" style="margin-left: 0px; "><i class="fa fa-search" aria-hidden="true" style="margin-right: 20px;"></i> All</a></li>
+				<li><a href="#" ><i class="fa fa-film" aria-hidden="true" style="margin-right: 20px;"></i> Titles</a></li>
+				<li><a href="#"><i class="fa fa-television" aria-hidden="true" style="margin-right: 20px;"></i> TV Episodes</a></li>
+				<li><a href="#"><i class="fa fa-user" aria-hidden="true" style="margin-right: 20px;"></i> Celebs</a></li>
+				<li><a href="#"><i class="fa fa-building-o" aria-hidden="true" style="margin-right: 20px;"></i> Companies</a></li>
+				<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true" style="margin-right: 20px;"></i> Keywords</a></li>
+				<li style=" border-top: solid 1px white; "><a href="#" style=" padding-top: 9.2px; "><i class="fa fa-search-plus" aria-hidden="true" style="margin-right: 20px;  "></i> Advanced Search</a></li>
+				</ul>
+          </div>
+
+ 	<script>
+function myFunction() {
+  var x = document.getElementById("topnav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function myFunction1() {
+  var x = document.getElementById("topnav1");
+  var s = document.getElementById("sym");
+  s.classList.toggle("fa-caret-up");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    
+  } else {
+    x.style.display = "block";
+       
+  }
+}
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body> 	
+</html>
